@@ -9,8 +9,8 @@ import {
 import { openAlert } from '../Redux/Slices/alertSlice';
 import { addMembers, setActivityLoading, updateActivity, updateBackground, updateDescription } from '../Redux/Slices/boardSlice';
 
-const listRoute = 'http://localhost:3001/list';
-const boardRoute = 'http://localhost:3001/board';
+const listRoute = 'https://trello-website-1-wpqc.onrender.com/list';
+const boardRoute = 'https://trello-website-1-wpqc.onrender.com/board';
 
 export const getLists = async (boardId, dispatch) => {
 	dispatch(setLoading(true));
