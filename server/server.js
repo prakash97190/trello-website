@@ -51,6 +51,15 @@ app.use('/board', boardRoute);
 app.use('/list', listRoute);
 app.use('/card', cardRoute);
 
+app.get("/", (req, res) => {
+	res.send("Backend is working");
+});
+
+app.get("/test", (req, res) => {
+	res.send("Test route works");
+});
+
+const PORT = process.env.PORT || 3001;
 app.listen(process.env.PORT, () => {
 	console.log(`Server is online! Port: ${process.env.PORT}`);
 });

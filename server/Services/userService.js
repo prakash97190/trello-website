@@ -19,6 +19,7 @@ const login = async (email, callback) => {
     if (!user) return callback({ errMessage: "Your email/password is wrong!" });
     return callback(false, { ...user.toJSON() });
   } catch (err) {
+    console.log("LOGIN ERROR:", err);
     return callback({
       errMessage: "Something went wrong",
       details: err.message,

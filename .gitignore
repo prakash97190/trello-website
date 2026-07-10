@@ -1,3 +1,22 @@
 /client/node_modules
 /server/node_modules
 /server/.env
+
+# dependencies
+node_modules/
+
+# environment variables
+.env
+
+# logs
+npm-debug.log*
+
+# macOS
+.DS_Store
+
+# build folders
+client/build/
+dist/
+
+# uploads (optional)
+uploads/
