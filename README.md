@@ -1,92 +1,217 @@
-# Trello Clone With MERN Stack!
+# Trello Website
 
+A full-stack Trello-inspired task management application built with the **MERN Stack** (MongoDB, Express.js, React.js, and Node.js). The application allows users to create boards, manage tasks, collaborate, and organize projects through a modern drag-and-drop interface.
 
+##  Features
 
-This is an app built with MERN Stack, and you can access the live demo [HERE](https://trello-clone-umurdogan.herokuapp.com) and you can CLICK the following image to watch video! 
+### Authentication
 
-[![Trello clone video](https://i.ibb.co/6PRn1Bw/Ekran-g-r-nt-s-2021-12-23-16-21-36.png)](https://www.youtube.com/watch?v=D2Vcb_QIWmA)
+* User registration and login
+* JWT-based authentication
+* Secure password hashing
+* Protected routes
+* User profile management
 
+### Boards
 
-Click the image to watch video!
-&nbsp;
-# Purpose
-My purpose of developing this project is to show what I can do both on the frontend and the backend. I would also like to point out that it is my first project as Mern stack.
+* Create new boards
+* Edit board details
+* Delete boards
+* View all personal boards
 
-&nbsp;
-# Features
+### Lists
 
-- Fully responsive design like Trello
-- Register and Login
-- Create multiple boards, select any background and add members
-- Create multiple lists
-- Create multiple cards
-- Drag and drop lists or cards
-- Change title and background of board
-- Add description for board
-- Change title of lists
-- Add description, cover color, members, labels, start date, due date, multiple checklist and multiple attachements
-- Delete boards, lists or cards
-- Track all activity logs of cards and boards
-- Comment on cards or boards
-- Search boards or cards titles
+* Create multiple lists within a board
+* Rename lists
+* Delete lists
+* Reorder lists
 
-&nbsp;
-# Used Technologies
+### Cards
 
-| Server Side    	| Client Side               	| Only Development 	|
-|----------------	|---------------------------	|------------------	|
-| expressjs      	| styled-components         	| nodemon          	|
-| express-unless 	| reduxjs-toolkit           	|                  	|
-| mongoose       	| react-beautiful-dnd       	|                  	|
-| cors           	| material-ui                	|                  	|
-| path           	| axios                     	|                  	|
-| dotenv         	| date-fns                  	|                  	|
-| jsonwebtoken   	| moment                    	|                  	|
-| bcryptjs       	| atlaskit/css-reset        	|                  	|
-|                  	| react-hook/mouse-position 	|                  	|
-|                	| react-router              	|                  	|
-|                	| react hooks                 	|                  	|
+* Create task cards
+* Edit card title and description
+* Delete cards
+* Move cards between lists using drag and drop
+* Reorder cards within the same list
 
-&nbsp;
-## How to run?
+### Task Management
 
-- Download nodejs [here](https://nodejs.org/en/download/) 
-- For database, you can use local mongodb or mongo atlas. See [here](https://www.mongodb.com/)
-- Clone the repository:
+* Assign tasks to users
+* Set due dates
+* Add labels
+* Track task progress
 
-  ```git clone https://github.com/umurdogann/trello-clone-mern``` 
+### User Experience
 
-- Change directory:
+* Responsive design
+* Clean and modern UI
+* Real-time interface updates
+* Loading indicators
+* Error handling and validation
 
-  ```cd trello-clone-mern```
+### Backend
 
-- Open second terminal same location:
-    * Ubuntu: &nbsp; ```gnome-terminal```
-    * Windows: &nbsp; ```start```
+* RESTful API
+* MongoDB database
+* Express.js server
+* JWT authentication
+* Modular folder structure
+* Secure API endpoints
 
-- Change directory of first terminal and install packages:
+## 🛠 Tech Stack
 
-    ```cd server```
+### Frontend
 
-    ```npm install```
+* React.js
+* React Router
+* Axios
+* CSS / Tailwind CSS (if applicable)
 
-- Create .env file in server directory like .env.example and enter required variables
+### Backend
 
-- Start the server:
+* Node.js
+* Express.js
+* MongoDB
+* Mongoose
+* JWT
+* bcrypt
+* dotenv
+* CORS
 
-    ```npm run start```
+##  Project Structure
 
-- Switch the second terminal
+```text
+trello-website/
+│
+├── client/
+│   ├── src/
+│   ├── public/
+│   ├── package.json
+│   └── ...
+│
+├── server/
+│   ├── controllers/
+│   ├── middleware/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── package.json
+│   └── server.js
+│
+├── README.md
+└── .gitignore
+```
 
-- Change directory of second terminal and install packages:
+##  Installation
 
-    ```cd client```
+### 1. Clone the repository
 
-    ```npm install```
+```bash
+git clone https://github.com/prakash97190/trello-website.git
+```
 
-- Start the client:
+### 2. Navigate to the project
 
-    ```npm run start```
-# trello
-# trello-website
-# trello-website
+```bash
+cd trello-website
+```
+
+## ▶️ Running the Backend
+
+Navigate to the server folder:
+
+```bash
+cd server
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Create a `.env` file and add your environment variables:
+
+```env
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+CLIENT_URL=http://localhost:3000
+```
+
+Start the backend server:
+
+```bash
+npm run dev
+```
+
+The backend will run on:
+
+```
+http://localhost:5000
+```
+
+##  Running the Frontend
+
+Open another terminal.
+
+Navigate to the client folder:
+
+```bash
+cd client
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the React application:
+
+```bash
+npm start
+```
+
+The frontend will run on:
+
+```
+http://localhost:3000
+```
+
+##  API
+
+The backend provides REST APIs for:
+
+* Authentication
+* Users
+* Boards
+* Lists
+* Cards
+* Task Management
+
+##  Screenshots
+
+Add screenshots of the application here.
+
+##  Future Improvements
+
+* Real-time collaboration using Socket.IO
+* Notifications
+* File attachments
+* Comments on cards
+* Activity history
+* Dark mode
+* Search and filtering
+* Team workspaces
+* Email notifications
+
+##  Author
+
+**Prakash Singh**
+
+GitHub: https://github.com/prakash97190
+
+## 📄 License
+
+This project is intended for educational and learning purposes.
